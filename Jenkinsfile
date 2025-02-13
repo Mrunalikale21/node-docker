@@ -12,7 +12,7 @@ pipeline {
         stage('Run JavaScript File') {
             steps {
                 echo "Running app.js with Node.js..."
-                sh 'node app.js'  // Run the JavaScript file
+                sh 'node node-docker/app.js'  // Run the JavaScript file
             }
         }
     }
